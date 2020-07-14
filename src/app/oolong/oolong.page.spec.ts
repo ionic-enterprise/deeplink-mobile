@@ -13,11 +13,10 @@ describe('OolongPage', () => {
   beforeEach(async(() => {
     navController = createNavControllerMock();
     TestBed.configureTestingModule({
-      declarations: [ OolongPage ],
+      declarations: [OolongPage],
       providers: [{ provide: NavController, useValue: navController }],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    })
-    .compileComponents();
+    }).compileComponents();
   }));
 
   beforeEach(() => {

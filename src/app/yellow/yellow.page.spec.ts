@@ -13,11 +13,10 @@ describe('YellowPage', () => {
   beforeEach(async(() => {
     navController = createNavControllerMock();
     TestBed.configureTestingModule({
-      declarations: [ YellowPage ],
+      declarations: [YellowPage],
       providers: [{ provide: NavController, useValue: navController }],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    })
-    .compileComponents();
+    }).compileComponents();
   }));
 
   beforeEach(() => {

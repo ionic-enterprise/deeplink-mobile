@@ -13,11 +13,10 @@ describe('GreenPage', () => {
   beforeEach(async(() => {
     navController = createNavControllerMock();
     TestBed.configureTestingModule({
-      declarations: [ GreenPage ],
+      declarations: [GreenPage],
       providers: [{ provide: NavController, useValue: navController }],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    })
-    .compileComponents();
+    }).compileComponents();
   }));
 
   beforeEach(() => {

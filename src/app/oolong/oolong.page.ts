@@ -4,7 +4,7 @@ import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-oolong',
   templateUrl: './oolong.page.html',
-  styleUrls: ['./oolong.page.scss']
+  styleUrls: ['./oolong.page.scss'],
 })
 export class OolongPage {
   constructor(private navController: NavController) {}

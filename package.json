@@ -47,6 +47,7 @@
     "@angular/compiler-cli": "~8.2.14",
     "@angular/language-service": "~8.2.14",
     "@ionic/angular-toolkit": "~2.1.1",
+    "@ionic/prettier-config": "^1.0.0",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.8",
     "@types/node": "~12.12.16",
@@ -97,5 +98,6 @@
       "android",
       "ios"
     ]
-  }
+  },
+  "prettier": "@ionic/prettier-config"
 }

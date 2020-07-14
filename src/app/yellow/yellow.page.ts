@@ -4,7 +4,7 @@ import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-yellow',
   templateUrl: './yellow.page.html',
-  styleUrls: ['./yellow.page.scss']
+  styleUrls: ['./yellow.page.scss'],
 })
 export class YellowPage {
   constructor(private navController: NavController) {}

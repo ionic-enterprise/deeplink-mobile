@@ -4,7 +4,7 @@ import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-white',
   templateUrl: 'white.page.html',
-  styleUrls: ['white.page.scss']
+  styleUrls: ['white.page.scss'],
 })
 export class WhitePage {
   constructor(private navController: NavController) {}

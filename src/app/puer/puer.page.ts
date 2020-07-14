@@ -4,7 +4,7 @@ import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-puer',
   templateUrl: './puer.page.html',
-  styleUrls: ['./puer.page.scss']
+  styleUrls: ['./puer.page.scss'],
 })
 export class PuerPage {
   constructor(private navController: NavController) {}

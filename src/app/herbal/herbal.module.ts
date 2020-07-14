@@ -10,8 +10,8 @@ import { HerbalPage } from './herbal.page';
 const routes: Routes = [
   {
     path: '',
-    component: HerbalPage
-  }
+    component: HerbalPage,
+  },
 ];
 
 @NgModule({
@@ -19,8 +19,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
   ],
-  declarations: [HerbalPage]
+  declarations: [HerbalPage],
 })
 export class HerbalPageModule {}

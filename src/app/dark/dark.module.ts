@@ -10,8 +10,8 @@ import { DarkPage } from './dark.page';
 const routes: Routes = [
   {
     path: '',
-    component: DarkPage
-  }
+    component: DarkPage,
+  },
 ];
 
 @NgModule({
@@ -19,8 +19,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
   ],
-  declarations: [DarkPage]
+  declarations: [DarkPage],
 })
 export class DarkPageModule {}

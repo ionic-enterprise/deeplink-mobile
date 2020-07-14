@@ -4,7 +4,7 @@ import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-green',
   templateUrl: './green.page.html',
-  styleUrls: ['./green.page.scss']
+  styleUrls: ['./green.page.scss'],
 })
 export class GreenPage {
   constructor(private navController: NavController) {}

@@ -10,8 +10,8 @@ import { GreenPage } from './green.page';
 const routes: Routes = [
   {
     path: '',
-    component: GreenPage
-  }
+    component: GreenPage,
+  },
 ];
 
 @NgModule({
@@ -19,8 +19,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
   ],
-  declarations: [GreenPage]
+  declarations: [GreenPage],
 })
 export class GreenPageModule {}

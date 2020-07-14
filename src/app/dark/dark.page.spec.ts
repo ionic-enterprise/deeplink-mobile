@@ -13,11 +13,10 @@ describe('DarkPage', () => {
   beforeEach(async(() => {
     navController = createNavControllerMock();
     TestBed.configureTestingModule({
-      declarations: [ DarkPage ],
+      declarations: [DarkPage],
       providers: [{ provide: NavController, useValue: navController }],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    })
-    .compileComponents();
+    }).compileComponents();
   }));
 
   beforeEach(() => {

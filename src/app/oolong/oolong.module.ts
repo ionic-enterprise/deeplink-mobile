@@ -10,8 +10,8 @@ import { OolongPage } from './oolong.page';
 const routes: Routes = [
   {
     path: '',
-    component: OolongPage
-  }
+    component: OolongPage,
+  },
 ];
 
 @NgModule({
@@ -19,8 +19,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
   ],
-  declarations: [OolongPage]
+  declarations: [OolongPage],
 })
 export class OolongPageModule {}

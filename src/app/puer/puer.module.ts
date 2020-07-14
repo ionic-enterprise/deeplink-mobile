@@ -10,8 +10,8 @@ import { PuerPage } from './puer.page';
 const routes: Routes = [
   {
     path: '',
-    component: PuerPage
-  }
+    component: PuerPage,
+  },
 ];
 
 @NgModule({
@@ -19,8 +19,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
   ],
-  declarations: [PuerPage]
+  declarations: [PuerPage],
 })
 export class PuerPageModule {}

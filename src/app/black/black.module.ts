@@ -10,8 +10,8 @@ import { BlackPage } from './black.page';
 const routes: Routes = [
   {
     path: '',
-    component: BlackPage
-  }
+    component: BlackPage,
+  },
 ];
 
 @NgModule({
@@ -19,8 +19,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
   ],
-  declarations: [BlackPage]
+  declarations: [BlackPage],
 })
 export class BlackPageModule {}

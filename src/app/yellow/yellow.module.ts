@@ -10,8 +10,8 @@ import { YellowPage } from './yellow.page';
 const routes: Routes = [
   {
     path: '',
-    component: YellowPage
-  }
+    component: YellowPage,
+  },
 ];
 
 @NgModule({
@@ -19,8 +19,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
   ],
-  declarations: [YellowPage]
+  declarations: [YellowPage],
 })
 export class YellowPageModule {}

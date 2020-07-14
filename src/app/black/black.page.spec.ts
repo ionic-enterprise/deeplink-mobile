@@ -15,7 +15,7 @@ describe('BlackPage', () => {
     TestBed.configureTestingModule({
       declarations: [BlackPage],
       providers: [{ provide: NavController, useValue: navController }],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA]
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
   }));
 

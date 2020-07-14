@@ -13,11 +13,10 @@ describe('HerbalPage', () => {
   beforeEach(async(() => {
     navController = createNavControllerMock();
     TestBed.configureTestingModule({
-      declarations: [ HerbalPage ],
+      declarations: [HerbalPage],
       providers: [{ provide: NavController, useValue: navController }],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    })
-    .compileComponents();
+    }).compileComponents();
   }));
 
   beforeEach(() => {

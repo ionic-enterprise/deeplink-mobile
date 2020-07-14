@@ -14,10 +14,10 @@ import { WhitePage } from './white.page';
     RouterModule.forChild([
       {
         path: '',
-        component: WhitePage
-      }
-    ])
+        component: WhitePage,
+      },
+    ]),
   ],
-  declarations: [WhitePage]
+  declarations: [WhitePage],
 })
 export class WhitePageModule {}

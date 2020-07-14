@@ -4,7 +4,7 @@ import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-black',
   templateUrl: './black.page.html',
-  styleUrls: ['./black.page.scss']
+  styleUrls: ['./black.page.scss'],
 })
 export class BlackPage {
   constructor(private navController: NavController) {}

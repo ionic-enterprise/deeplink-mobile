@@ -23,7 +23,9 @@ describe('AppComponent', () => {
     deeplinks = jasmine.createSpyObj('Deeplinks', { route: of() });
     navController = createNavControllerMock();
     platformReadyPromise = Promise.resolve();
-    platform = jasmine.createSpyObj('Platform', { ready: platformReadyPromise });
+    platform = jasmine.createSpyObj('Platform', {
+      ready: platformReadyPromise,
+    });
     splashScreenSpy = jasmine.createSpyObj('SplashScreen', ['hide']);
     statusBarSpy = jasmine.createSpyObj('StatusBar', ['styleDefault']);
 
@@ -35,8 +37,8 @@ describe('AppComponent', () => {
         { provide: NavController, useValue: navController },
         { provide: StatusBar, useValue: statusBarSpy },
         { provide: SplashScreen, useValue: splashScreenSpy },
-        { provide: Platform, useValue: platform }
-      ]
+        { provide: Platform, useValue: platform },
+      ],
     }).compileComponents();
   }));
 

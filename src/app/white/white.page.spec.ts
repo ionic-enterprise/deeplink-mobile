@@ -13,11 +13,10 @@ describe('WhitePage', () => {
   beforeEach(async(() => {
     navController = createNavControllerMock();
     TestBed.configureTestingModule({
-      declarations: [ WhitePage ],
+      declarations: [WhitePage],
       providers: [{ provide: NavController, useValue: navController }],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    })
-      .compileComponents();
+    }).compileComponents();
   }));
 
   beforeEach(() => {
