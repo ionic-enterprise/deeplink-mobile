@@ -31,17 +31,18 @@ export class AppComponent {
   private setupDeepLinks() {
     this.deeplinks
       .route({
-        black: '/black',
-        dark: '/dark',
-        green: '/green',
-        herbal: '/herbal',
-        oolong: '/oolong',
-        puer: '/puer',
-        white: '/white',
-        yellow: '/yellow',
+        '/black': 'black',
+        '/dark': 'dark',
+        '/green': 'green',
+        '/herbal': 'herbal',
+        '/oolong': 'oolong',
+        '/puer': 'puer',
+        '/white': 'white',
+        '/yellow': 'yellow',
       })
       .subscribe(
         match => {
+          console.log('match', match);
           this.navController.navigateRoot(`/${match.$route}`);
         },
         nomatch => {
