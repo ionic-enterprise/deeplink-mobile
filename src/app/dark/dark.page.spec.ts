@@ -1,5 +1,5 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { NavController } from '@ionic/angular';
 
 import { DarkPage } from './dark.page';
@@ -10,7 +10,7 @@ describe('DarkPage', () => {
   let fixture: ComponentFixture<DarkPage>;
   let navController;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     navController = createNavControllerMock();
     TestBed.configureTestingModule({
       declarations: [DarkPage],

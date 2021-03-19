@@ -1,5 +1,5 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { TestBed, async } from '@angular/core/testing';
+import { TestBed, waitForAsync } from '@angular/core/testing';
 import { NavController } from '@ionic/angular';
 import { of } from 'rxjs';
 
@@ -19,7 +19,7 @@ describe('AppComponent', () => {
   let splashScreenSpy;
   let statusBarSpy;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     deeplinks = jasmine.createSpyObj('Deeplinks', { route: of() });
     navController = createNavControllerMock();
     platformReadyPromise = Promise.resolve();
