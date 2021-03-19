@@ -43,6 +43,9 @@ export class AppComponent {
       .subscribe(
         match => {
           console.log('match', match);
+          if (match.$args.teaid) {
+            alert(match.$args.teaid);
+          }
           this.navController.navigateRoot(`/${match.$route}`);
         },
         nomatch => {
