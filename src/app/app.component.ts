@@ -19,12 +19,16 @@ export class AppComponent {
   private handleDeeplink(link: string) {
     const path = this.getPath(link);
     if (path) {
-      this.navController.navigateRoot(path);
+      this.navController.navigateRoot(['/', path]);
     }
   }
 
   private getPath(link: string): string {
     const url = new URL(link);
-    return url.protocol === 'csdldemo:' ? `/${url.hostname}` : url.pathname;
+    const paths = url.pathname.split('/');
+    return (
+      paths[paths.length - 1] ||
+      (url.protocol === 'csdldemo:' ? url.hostname : '')
+    );
   }
 }
