@@ -19,28 +19,30 @@ describe('AppComponent', () => {
   let splashScreenSpy;
   let statusBarSpy;
 
-  beforeEach(waitForAsync(() => {
-    deeplinks = jasmine.createSpyObj('Deeplinks', { route: of() });
-    navController = createNavControllerMock();
-    platformReadyPromise = Promise.resolve();
-    platform = jasmine.createSpyObj('Platform', {
-      ready: platformReadyPromise,
-    });
-    splashScreenSpy = jasmine.createSpyObj('SplashScreen', ['hide']);
-    statusBarSpy = jasmine.createSpyObj('StatusBar', ['styleDefault']);
+  beforeEach(
+    waitForAsync(() => {
+      deeplinks = jasmine.createSpyObj('Deeplinks', { route: of() });
+      navController = createNavControllerMock();
+      platformReadyPromise = Promise.resolve();
+      platform = jasmine.createSpyObj('Platform', {
+        ready: platformReadyPromise,
+      });
+      splashScreenSpy = jasmine.createSpyObj('SplashScreen', ['hide']);
+      statusBarSpy = jasmine.createSpyObj('StatusBar', ['styleDefault']);
 
-    TestBed.configureTestingModule({
-      declarations: [AppComponent],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
-      providers: [
-        { provide: Deeplinks, useValue: deeplinks },
-        { provide: NavController, useValue: navController },
-        { provide: StatusBar, useValue: statusBarSpy },
-        { provide: SplashScreen, useValue: splashScreenSpy },
-        { provide: Platform, useValue: platform },
-      ],
-    }).compileComponents();
-  }));
+      TestBed.configureTestingModule({
+        declarations: [AppComponent],
+        schemas: [CUSTOM_ELEMENTS_SCHEMA],
+        providers: [
+          { provide: Deeplinks, useValue: deeplinks },
+          { provide: NavController, useValue: navController },
+          { provide: StatusBar, useValue: statusBarSpy },
+          { provide: SplashScreen, useValue: splashScreenSpy },
+          { provide: Platform, useValue: platform },
+        ],
+      }).compileComponents();
+    }),
+  );
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);

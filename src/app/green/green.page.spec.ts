@@ -10,14 +10,16 @@ describe('GreenPage', () => {
   let fixture: ComponentFixture<GreenPage>;
   let navController;
 
-  beforeEach(waitForAsync(() => {
-    navController = createNavControllerMock();
-    TestBed.configureTestingModule({
-      declarations: [GreenPage],
-      providers: [{ provide: NavController, useValue: navController }],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    }).compileComponents();
-  }));
+  beforeEach(
+    waitForAsync(() => {
+      navController = createNavControllerMock();
+      TestBed.configureTestingModule({
+        declarations: [GreenPage],
+        providers: [{ provide: NavController, useValue: navController }],
+        schemas: [CUSTOM_ELEMENTS_SCHEMA],
+      }).compileComponents();
+    }),
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(GreenPage);

@@ -31,14 +31,14 @@ export class AppComponent {
   private setupDeepLinks() {
     this.deeplinks
       .route({
-        'black': '/black',
-        'dark': '/dark',
-        'green': '/green',
-        'herbal': '/herbal',
-        'oolong': '/oolong',
-        'puer': '/puer',
-        'white': '/white',
-        'yellow': '/yellow',
+        black: '/black',
+        dark: '/dark',
+        green: '/green',
+        herbal: '/herbal',
+        oolong: '/oolong',
+        puer: '/puer',
+        white: '/white',
+        yellow: '/yellow',
       })
       .subscribe(
         match => {

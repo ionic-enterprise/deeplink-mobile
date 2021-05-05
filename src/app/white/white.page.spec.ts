@@ -10,14 +10,16 @@ describe('WhitePage', () => {
   let fixture: ComponentFixture<WhitePage>;
   let navController;
 
-  beforeEach(waitForAsync(() => {
-    navController = createNavControllerMock();
-    TestBed.configureTestingModule({
-      declarations: [WhitePage],
-      providers: [{ provide: NavController, useValue: navController }],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    }).compileComponents();
-  }));
+  beforeEach(
+    waitForAsync(() => {
+      navController = createNavControllerMock();
+      TestBed.configureTestingModule({
+        declarations: [WhitePage],
+        providers: [{ provide: NavController, useValue: navController }],
+        schemas: [CUSTOM_ELEMENTS_SCHEMA],
+      }).compileComponents();
+    }),
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(WhitePage);

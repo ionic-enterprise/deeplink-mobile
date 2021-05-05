@@ -4,12 +4,15 @@
   "author": "Ionic Framework",
   "homepage": "http://ionicframework.com/",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "e2e": "ng e2e",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "ng": "ng",
+    "postinstall": "husky install",
+    "start": "ng serve",
+    "test": "ng test --browsers=ChromeHeadless",
+    "test:ci": "ng test --browsers=ChromeHeadless --no-watch",
+    "test:debug": "ng test"
   },
   "private": true,
   "dependencies": {

@@ -10,14 +10,16 @@ describe('YellowPage', () => {
   let fixture: ComponentFixture<YellowPage>;
   let navController;
 
-  beforeEach(waitForAsync(() => {
-    navController = createNavControllerMock();
-    TestBed.configureTestingModule({
-      declarations: [YellowPage],
-      providers: [{ provide: NavController, useValue: navController }],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    }).compileComponents();
-  }));
+  beforeEach(
+    waitForAsync(() => {
+      navController = createNavControllerMock();
+      TestBed.configureTestingModule({
+        declarations: [YellowPage],
+        providers: [{ provide: NavController, useValue: navController }],
+        schemas: [CUSTOM_ELEMENTS_SCHEMA],
+      }).compileComponents();
+    }),
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(YellowPage);
