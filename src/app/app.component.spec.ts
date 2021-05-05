@@ -1,5 +1,7 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { TestBed, waitForAsync } from '@angular/core/testing';
+import { NavController } from '@ionic/angular';
+import { createNavControllerMock } from '../../test/mocks';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
@@ -8,6 +10,9 @@ describe('AppComponent', () => {
       TestBed.configureTestingModule({
         declarations: [AppComponent],
         schemas: [CUSTOM_ELEMENTS_SCHEMA],
+        providers: [
+          { provide: NavController, useFactory: createNavControllerMock },
+        ],
       }).compileComponents();
     }),
   );

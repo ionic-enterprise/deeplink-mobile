@@ -1,4 +1,4 @@
-import { Component, NgZone } from '@angular/core';
+import { Component, NgZone, OnInit } from '@angular/core';
 import { Plugins } from '@capacitor/core';
 import { NavController } from '@ionic/angular';
 
@@ -6,7 +6,7 @@ import { NavController } from '@ionic/angular';
   selector: 'app-root',
   templateUrl: 'app.component.html',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   constructor(private navController: NavController, private zone: NgZone) {}
 
   ngOnInit() {
