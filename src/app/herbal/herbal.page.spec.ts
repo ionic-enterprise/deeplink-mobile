@@ -1,9 +1,7 @@
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { NavController } from '@ionic/angular';
-
-import { HerbalPage } from './herbal.page';
 import { createNavControllerMock } from '../../../test/mocks';
+import { HerbalPage } from './herbal.page';
 
 describe('HerbalPage', () => {
   let component: HerbalPage;
@@ -13,9 +11,8 @@ describe('HerbalPage', () => {
   beforeEach(waitForAsync(() => {
     navController = createNavControllerMock();
     TestBed.configureTestingModule({
-      declarations: [HerbalPage],
+      imports: [HerbalPage],
       providers: [{ provide: NavController, useValue: navController }],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
   }));
 

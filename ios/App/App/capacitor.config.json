@@ -1,6 +1,6 @@
 {
-  "appId": "io.ionic.deeplinkdemo",
-  "appName": "cs-demo-deeplink-mobile",
+  "appId": "io.ionic.csdeeplinkdemo",
+  "appName": "deeplink-mobile",
   "bundledWebRuntime": false,
   "webDir": "www",
   "plugins": {

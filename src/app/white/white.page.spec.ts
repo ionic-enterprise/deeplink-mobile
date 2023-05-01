@@ -1,7 +1,6 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { NavController } from '@ionic/angular';
-
 import { WhitePage } from './white.page';
 import { createNavControllerMock } from '../../../test/mocks';
 
@@ -13,9 +12,8 @@ describe('WhitePage', () => {
   beforeEach(waitForAsync(() => {
     navController = createNavControllerMock();
     TestBed.configureTestingModule({
-      declarations: [WhitePage],
+      imports: [WhitePage],
       providers: [{ provide: NavController, useValue: navController }],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
   }));
 

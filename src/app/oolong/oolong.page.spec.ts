@@ -1,9 +1,7 @@
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { NavController } from '@ionic/angular';
-
-import { OolongPage } from './oolong.page';
 import { createNavControllerMock } from '../../../test/mocks';
+import { OolongPage } from './oolong.page';
 
 describe('OolongPage', () => {
   let component: OolongPage;
@@ -13,9 +11,8 @@ describe('OolongPage', () => {
   beforeEach(waitForAsync(() => {
     navController = createNavControllerMock();
     TestBed.configureTestingModule({
-      declarations: [OolongPage],
+      imports: [OolongPage],
       providers: [{ provide: NavController, useValue: navController }],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
   }));
 

@@ -1,10 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { NavController } from '@ionic/angular';
+import { IonicModule, NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-black',
   templateUrl: './black.page.html',
   styleUrls: ['./black.page.scss'],
+  standalone: true,
+  imports: [CommonModule, IonicModule],
 })
 export class BlackPage {
   constructor(private navController: NavController) {}

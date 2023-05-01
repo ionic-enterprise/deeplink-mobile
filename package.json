@@ -12,9 +12,9 @@
     "ng": "ng",
     "prepare": "husky install",
     "start": "ng serve",
-    "test": "ng test",
-    "test:ci": "ng test --no-watch",
-    "test:debug": "ng test --browsers=Chrome"
+    "test": "ng test --no-watch",
+    "test:debug": "ng test --browsers=Chrome",
+    "test:dev": "ng test"
   },
   "private": true,
   "dependencies": {
@@ -30,6 +30,7 @@
     "@capacitor/haptics": "4.1.0",
     "@capacitor/ios": "4.8.0",
     "@capacitor/keyboard": "4.1.1",
+    "@capacitor/splash-screen": "~4.2.0",
     "@capacitor/status-bar": "4.1.1",
     "@ionic/angular": "~7.0.4",
     "@types/eslint": "~8.37.0",

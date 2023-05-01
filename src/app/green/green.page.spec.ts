@@ -1,9 +1,7 @@
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { NavController } from '@ionic/angular';
-
-import { GreenPage } from './green.page';
 import { createNavControllerMock } from '../../../test/mocks';
+import { GreenPage } from './green.page';
 
 describe('GreenPage', () => {
   let component: GreenPage;
@@ -13,9 +11,8 @@ describe('GreenPage', () => {
   beforeEach(waitForAsync(() => {
     navController = createNavControllerMock();
     TestBed.configureTestingModule({
-      declarations: [GreenPage],
+      imports: [GreenPage],
       providers: [{ provide: NavController, useValue: navController }],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
   }));
 
