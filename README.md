@@ -69,7 +69,7 @@ For Android, you only need to have the Site Association File when you release th
 
 ### iOS
 
-Running this application on an iOS device and having it work with the Universal Links is a little trickier in that you need to have the Site Association File in place, even for development. This mean that unless you are an Ionic employee who has access via our Enterprise team, and thus has access to the provisioning profile required to build the app, you cannot just run this application of the box. You will instead need to follow these fairly simple modifications to try it out:
+Running this application on an iOS device and having it work with the Universal Links is a little trickier in that you need to have the Site Association File in place, even for development. This mean that unless you are an Ionic employee who has access via our apple developer team you cannot just run this application out of the box. You will instead need to follow these fairly simple modifications to try it out:
 
 - Modify the Bundle ID for the application to something unique to you
 - Enroll in the Apple Developer Program
