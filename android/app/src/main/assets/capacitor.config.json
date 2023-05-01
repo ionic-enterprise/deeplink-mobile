@@ -1,13 +1,11 @@
 {
-  "appId": "io.ionic.deeplinkdemo",
-  "appName": "cs-demo-deeplink-mobile",
+  "appId": "io.ionic.csdeeplinkdemo",
+  "appName": "deeplink-mobile",
   "bundledWebRuntime": false,
-  "npmClient": "npm",
   "webDir": "www",
   "plugins": {
     "SplashScreen": {
-      "launchShowDuration": 0
+      "launchAutoHide": false
     }
-  },
-  "cordova": {}
+  }
 }

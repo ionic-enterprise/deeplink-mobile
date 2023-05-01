@@ -8,18 +8,16 @@ import { createNavControllerMock } from '../../../test/mocks';
 describe('PuerPage', () => {
   let component: PuerPage;
   let fixture: ComponentFixture<PuerPage>;
-  let navController;
+  let navController: NavController;
 
-  beforeEach(
-    waitForAsync(() => {
-      navController = createNavControllerMock();
-      TestBed.configureTestingModule({
-        declarations: [PuerPage],
-        providers: [{ provide: NavController, useValue: navController }],
-        schemas: [CUSTOM_ELEMENTS_SCHEMA],
-      }).compileComponents();
-    }),
-  );
+  beforeEach(waitForAsync(() => {
+    navController = createNavControllerMock();
+    TestBed.configureTestingModule({
+      declarations: [PuerPage],
+      providers: [{ provide: NavController, useValue: navController }],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
+    }).compileComponents();
+  }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(PuerPage);

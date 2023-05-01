@@ -1,5 +1,5 @@
 import { Component, NgZone, OnInit } from '@angular/core';
-import { Plugins } from '@capacitor/core';
+import { App } from '@capacitor/app';
 import { NavController } from '@ionic/angular';
 
 @Component({
@@ -10,7 +10,6 @@ export class AppComponent implements OnInit {
   constructor(private navController: NavController, private zone: NgZone) {}
 
   ngOnInit() {
-    const { App } = Plugins;
     App.addListener('appUrlOpen', (data: { url: string }) =>
       this.zone.run(() => this.handleDeeplink(data.url)),
     );

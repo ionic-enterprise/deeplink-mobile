@@ -8,18 +8,16 @@ import { createNavControllerMock } from '../../../test/mocks';
 describe('WhitePage', () => {
   let component: WhitePage;
   let fixture: ComponentFixture<WhitePage>;
-  let navController;
+  let navController: NavController;
 
-  beforeEach(
-    waitForAsync(() => {
-      navController = createNavControllerMock();
-      TestBed.configureTestingModule({
-        declarations: [WhitePage],
-        providers: [{ provide: NavController, useValue: navController }],
-        schemas: [CUSTOM_ELEMENTS_SCHEMA],
-      }).compileComponents();
-    }),
-  );
+  beforeEach(waitForAsync(() => {
+    navController = createNavControllerMock();
+    TestBed.configureTestingModule({
+      declarations: [WhitePage],
+      providers: [{ provide: NavController, useValue: navController }],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
+    }).compileComponents();
+  }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(WhitePage);
