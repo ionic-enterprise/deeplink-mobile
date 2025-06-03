@@ -6,7 +6,6 @@ import { IonicModule, NavController } from '@ionic/angular';
   selector: 'app-yellow',
   templateUrl: './yellow.page.html',
   styleUrls: ['./yellow.page.scss'],
-  standalone: true,
   imports: [CommonModule, IonicModule],
 })
 export class YellowPage {

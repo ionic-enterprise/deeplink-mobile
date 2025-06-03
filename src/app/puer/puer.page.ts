@@ -6,7 +6,6 @@ import { IonicModule, NavController } from '@ionic/angular';
   selector: 'app-puer',
   templateUrl: './puer.page.html',
   styleUrls: ['./puer.page.scss'],
-  standalone: true,
   imports: [CommonModule, IonicModule],
 })
 export class PuerPage {

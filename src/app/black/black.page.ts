@@ -6,7 +6,6 @@ import { IonicModule, NavController } from '@ionic/angular';
   selector: 'app-black',
   templateUrl: './black.page.html',
   styleUrls: ['./black.page.scss'],
-  standalone: true,
   imports: [CommonModule, IonicModule],
 })
 export class BlackPage {

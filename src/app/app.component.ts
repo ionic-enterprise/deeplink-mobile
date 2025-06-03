@@ -7,11 +7,13 @@ import { IonicModule, NavController } from '@ionic/angular';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
-  standalone: true,
   imports: [CommonModule, IonicModule],
 })
 export class AppComponent implements OnInit {
-  constructor(private navController: NavController, private zone: NgZone) {}
+  constructor(
+    private navController: NavController,
+    private zone: NgZone,
+  ) {}
 
   ngOnInit() {
     SplashScreen.hide();

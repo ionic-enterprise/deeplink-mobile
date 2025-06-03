@@ -6,7 +6,6 @@ import { IonicModule, NavController } from '@ionic/angular';
   selector: 'app-herbal',
   templateUrl: './herbal.page.html',
   styleUrls: ['./herbal.page.scss'],
-  standalone: true,
   imports: [CommonModule, IonicModule],
 })
 export class HerbalPage {

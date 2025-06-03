@@ -6,7 +6,6 @@ import { IonicModule, NavController } from '@ionic/angular';
   selector: 'app-dark',
   templateUrl: './dark.page.html',
   styleUrls: ['./dark.page.scss'],
-  standalone: true,
   imports: [CommonModule, IonicModule],
 })
 export class DarkPage {

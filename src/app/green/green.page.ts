@@ -6,7 +6,6 @@ import { IonicModule, NavController } from '@ionic/angular';
   selector: 'app-green',
   templateUrl: './green.page.html',
   styleUrls: ['./green.page.scss'],
-  standalone: true,
   imports: [CommonModule, IonicModule],
 })
 export class GreenPage {

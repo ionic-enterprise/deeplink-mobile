@@ -6,7 +6,6 @@ import { IonicModule, NavController } from '@ionic/angular';
   selector: 'app-white',
   templateUrl: 'white.page.html',
   styleUrls: ['white.page.scss'],
-  standalone: true,
   imports: [CommonModule, IonicModule],
 })
 export class WhitePage {

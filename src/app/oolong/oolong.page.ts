@@ -6,7 +6,6 @@ import { IonicModule, NavController } from '@ionic/angular';
   selector: 'app-oolong',
   templateUrl: './oolong.page.html',
   styleUrls: ['./oolong.page.scss'],
-  standalone: true,
   imports: [CommonModule, IonicModule],
 })
 export class OolongPage {
