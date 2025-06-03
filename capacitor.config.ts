@@ -3,7 +3,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 const config: CapacitorConfig = {
   appId: 'io.ionic.csdeeplinkdemo',
   appName: 'deeplink-mobile',
-  webDir: 'www',
+  webDir: 'www/browser',
   plugins: {
     SplashScreen: {
       launchAutoHide: false,
