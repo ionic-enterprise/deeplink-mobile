@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { IonicModule, NavController } from '@ionic/angular';
 
@@ -6,7 +5,7 @@ import { IonicModule, NavController } from '@ionic/angular';
   selector: 'app-oolong',
   templateUrl: './oolong.page.html',
   styleUrls: ['./oolong.page.scss'],
-  imports: [CommonModule, IonicModule],
+  imports: [IonicModule],
 })
 export class OolongPage {
   constructor(private navController: NavController) {}

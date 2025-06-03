@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { IonicModule, NavController } from '@ionic/angular';
 
@@ -6,7 +5,7 @@ import { IonicModule, NavController } from '@ionic/angular';
   selector: 'app-white',
   templateUrl: 'white.page.html',
   styleUrls: ['white.page.scss'],
-  imports: [CommonModule, IonicModule],
+  imports: [IonicModule],
 })
 export class WhitePage {
   constructor(private navController: NavController) {}

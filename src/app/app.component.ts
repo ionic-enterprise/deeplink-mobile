@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import { Component, NgZone, OnInit } from '@angular/core';
 import { App } from '@capacitor/app';
 import { SplashScreen } from '@capacitor/splash-screen';
@@ -7,7 +6,7 @@ import { IonicModule, NavController } from '@ionic/angular';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
-  imports: [CommonModule, IonicModule],
+  imports: [IonicModule],
 })
 export class AppComponent implements OnInit {
   constructor(
