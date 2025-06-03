@@ -1,8 +1,7 @@
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { NavController } from '@ionic/angular';
-import { WhitePage } from './white.page';
 import { createNavControllerMock } from '../../../test/mocks';
+import { WhitePage } from './white.page';
 
 describe('WhitePage', () => {
   let component: WhitePage;
